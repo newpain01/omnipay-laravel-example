@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// get credit card form
+Route::resource('paypal', 'Payments\PayPalController');
+
+// // post to gateway
+// Route::post('paypal', 'PayPalController@send');
